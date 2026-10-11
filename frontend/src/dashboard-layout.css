@@ -40,6 +40,28 @@
   padding-right: 18px;
 }
 
+.supportContact {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 12px 5px 0;
+  font-size: 11px;
+}
+
+.supportContact span {
+  color: #718096;
+}
+
+.supportContact a {
+  color: #79bdff;
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.supportContact a:hover {
+  text-decoration: underline;
+}
+
 main {
   width: calc(100% - var(--sidebar-width, 245px));
   margin-left: var(--sidebar-width, 245px);

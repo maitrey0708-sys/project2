@@ -1,5 +1,7 @@
 # AI Trading Dashboard
 
+For questions or help with the dashboard, contact [fultonskipz44@gmail.com](mailto:fultonskipz44@gmail.com).
+
 ## Live market-data mode
 The dashboard now attempts to load current market data through Yahoo Finance using `yfinance` from the FastAPI backend. It refreshes automatically every 15 seconds.
 

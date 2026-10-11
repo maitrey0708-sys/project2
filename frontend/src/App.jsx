@@ -740,6 +740,10 @@ function App(){
         {nav.map(([name, Icon]) => <button key={name} className={page === name ? "nav active" : "nav"} onClick={() => setPage(name)}><Icon size={18} />{name}</button>)}
         <div className="sidebarBottom">
           <div className="riskMini"><span>●</span> System online<small>Market data connected</small></div>
+          <div className="supportContact">
+            <span>Need help?</span>
+            <a href="mailto:fultonskipz44@gmail.com">fultonskipz44@gmail.com</a>
+          </div>
         </div>
         <button
           className="sidebarResizeHandle"
