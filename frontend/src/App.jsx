@@ -1369,6 +1369,10 @@ function ProfileDialog({profile, telegramConfig, onSave, onTestTelegram, onClose
         <label>Telegram bot token<input value={draftTelegram.botToken || ""} onChange={(event) => setDraftTelegram((current) => ({...current, botToken: event.target.value}))} placeholder="123456:ABCDEF" /></label>
         <label>Telegram chat ID<input value={draftTelegram.chatId || ""} onChange={(event) => setDraftTelegram((current) => ({...current, chatId: event.target.value}))} placeholder="-1001234567890" /></label>
         <p className="profilePrivacyNote">Use a Telegram bot token and your chat ID to receive signal notifications automatically.</p>
+        <details className="telegramIdSuggestion">
+          <summary>Suggestion: How do I find my bot token and chat ID?</summary>
+          <p>Create a bot with <a href="https://t.me/BotFather" target="_blank" rel="noreferrer">@BotFather</a> and copy its API token; the bot ID is the number before the colon. To find your chat ID, send a message to your bot, then check <code>https://api.telegram.org/bot&lt;TOKEN&gt;/getUpdates</code> for <code>message.chat.id</code>.</p>
+        </details>
         <div className="telegramTestActions">
           <button className="outline" type="button" onClick={testTelegram} disabled={testingTelegram}>
             {testingTelegram ? "Sending test…" : "Test Telegram connection"}

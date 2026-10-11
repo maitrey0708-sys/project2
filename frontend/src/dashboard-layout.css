@@ -529,6 +529,26 @@ main {
   font-size: 11px;
 }
 
+.telegramIdSuggestion {
+  margin: 14px 0;
+  color: #9aabc1;
+  font-size: 11px;
+}
+
+.telegramIdSuggestion summary {
+  color: #c6d4e5;
+  cursor: pointer;
+}
+
+.telegramIdSuggestion p {
+  margin: 8px 0 0;
+  line-height: 1.5;
+}
+
+.telegramIdSuggestion a {
+  color: #65b5ff;
+}
+
 .telegramTestActions {
   display: flex;
   flex-direction: column;
